@@ -1,0 +1,83 @@
+1.
+
+def filter_list(lst):
+    intlist = []
+    while len(lst) > 0:
+        if isinstance(lst[0],int):
+            if lst[0] >= 0
+                intlist.append(lst[0])
+                lst.remove(lst[0])
+            else:
+                lst.remove(lst[0])
+        if isinstance(lst[0],str):
+            lst.remove(lst[0])
+    return (intlist)
+
+
+2.
+
+
+def wordReverse(str):
+    i = len(str)-1
+    start = end = i+1
+    result = ''
+ 
+    while i >= 0:
+        if str[i] == ' ':
+            start = i+1
+            while start != end:
+                result += str[start]
+                start += 1
+            result += ' '
+            end = i
+        i -= 1
+    start = 0
+    while start != end:
+        result += str[start]
+        start += 1
+    return result
+ 
+
+4.
+
+ef factorial(n):
+      
+    if n == 0:
+        return 1
+     
+    return n * factorial(n-1)
+  
+# Driver Code
+num = 5;
+print("Factorial of", num, "is",
+factorial(num))
+
+
+5.
+
+
+test_list = ['3', '5', '7', '9', '11']
+  
+# printing original list 
+print ("The original list is : " + str(test_list))
+  
+# using append() + pop() + index()
+# moving element to end 
+test_list.append(test_list.pop(test_list.index(5)))
+  
+# printing result
+print ("The modified element moved list is : " + str(test_list))
+
+or:-
+
+test_list = ['3', '5', '7', '9', '11']
+  
+# printing original list 
+print ("The original list is : " + str(test_list))
+  
+# using sort() + key = (__eq__)
+# moving element to end 
+test_list.sort(key = '5'.__eq__)
+  
+# printing result
+print ("The modified element moved list is : " + str(test_list))
